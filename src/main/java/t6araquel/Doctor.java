@@ -80,13 +80,24 @@ public class Doctor extends PersonalSanitario {
     public String toString() {
         return "Doctor{" + "numLicencia=" + numLicencia + ", horasSemanales=" + horasSemanales + '}';
     }
-    
+
     //sobreescritura del metodo A
     @Override
     public void ordenARealizar() {
         System.out.println(this.getNombre() + " " + this.getApellidos() + ", pase consulta en la planta 3");
     }
-    
-    
+
+    //metodo B que sólo exista en la clase B -- no va a estar sobreescrito
+    //si los dos ultimos digitos de la licencia son 11 se asignan 35 horas semanales
+    //en otro caso se mantiene le valor original
+    public void cambiarHorasSegunLicencia() {
+        //para obtener los dos ultimos digitos
+        String dosDigitos = numLicencia.substring(numLicencia.length() - 2);
+
+        if (dosDigitos.equals("11")) {
+            this.horasSemanales = 35;
+        }
+
+    }
 
 }

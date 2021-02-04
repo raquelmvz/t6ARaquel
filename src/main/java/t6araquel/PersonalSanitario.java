@@ -123,5 +123,7 @@ public class PersonalSanitario {
     public void ordenARealizar() {
         System.out.println(nombre + " " + apellidos + ", acuda al Centro de Salud");
     }
+    
+    
 
 }

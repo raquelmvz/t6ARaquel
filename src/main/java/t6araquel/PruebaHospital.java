@@ -17,8 +17,22 @@ public class PruebaHospital {
 
         //orden a realizar
         personal1.ordenARealizar();
-        
-        
+
+        //creacion de doctor
+        Doctor doctor1 = new Doctor("895643211", 30, "02404135Z", "Raul", "Sánchez", PersonalSanitario.Genero.HOMBRE);
+        Doctor doctor2 = new Doctor("895643236", 42, "14486940E", "Elena", "Vega", PersonalSanitario.Genero.MUJER);
+
+        //impimir doctores
+        System.out.println("Doctores:");
+        System.out.println(doctor1 + "\n" + doctor2);
+        //cambio de las horas segun el numero de licencia
+        doctor1.cambiarHorasSegunLicencia();
+        doctor2.cambiarHorasSegunLicencia();
+
+        //imprimir por pantalla para comprobar
+        System.out.println("Tras cambio de horas semanales");
+        System.out.println(doctor1 + "\n" + doctor2);
+
     }
 
 }
