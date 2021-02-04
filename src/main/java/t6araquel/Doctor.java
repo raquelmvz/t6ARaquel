@@ -80,5 +80,13 @@ public class Doctor extends PersonalSanitario {
     public String toString() {
         return "Doctor{" + "numLicencia=" + numLicencia + ", horasSemanales=" + horasSemanales + '}';
     }
+    
+    //sobreescritura del metodo A
+    @Override
+    public void ordenARealizar() {
+        System.out.println(this.getNombre() + " " + this.getApellidos() + ", pase consulta en la planta 3");
+    }
+    
+    
 
 }

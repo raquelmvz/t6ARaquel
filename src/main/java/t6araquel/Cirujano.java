@@ -9,11 +9,11 @@ package t6araquel;
  *
  * @author raquel
  */
-public class Cirujano extends Doctor{
-    
+public class Cirujano extends Doctor {
+
     private int anyosExperiencia;
     private boolean trabajaEnPrivado;
-    
+
     //-----------CONSTRUCTORES--------------
     public Cirujano(int anyosExperiencia, boolean trabajaEnPrivado, String numLicencia, double horasSemanales, String dni, String nombre, String apellidos, Genero genero) {
         super(numLicencia, horasSemanales, dni, nombre, apellidos, genero);
@@ -25,7 +25,7 @@ public class Cirujano extends Doctor{
         this.anyosExperiencia = PersonalSanitario.generaAleatorio(0, 20);
         this.trabajaEnPrivado = false;
     }
-    
+
     //--------GETTERS Y SETTERS-----------------
     public int getAnyosExperiencia() {
         return anyosExperiencia;
@@ -42,8 +42,7 @@ public class Cirujano extends Doctor{
     public void setTrabajaEnPrivado(boolean trabajaEnPrivado) {
         this.trabajaEnPrivado = trabajaEnPrivado;
     }
-    
-    
+
     //---------HASH CODE & EQUALS----------------
     @Override
     public int hashCode() {
@@ -73,17 +72,17 @@ public class Cirujano extends Doctor{
         }
         return true;
     }
-    
-    
+
     //-----------TO STRING------------
     @Override
     public String toString() {
         return "Cirujano{" + "anyosExperiencia=" + anyosExperiencia + ", trabajaEnPrivado=" + trabajaEnPrivado + '}';
     }
-    
-    
-    
-    
-    
-    
+
+    //sobreescritura del metodo A
+    @Override
+    public void ordenARealizar() {
+        System.out.println(this.getNombre() + " " + this.getApellidos() + ", acuda a la sala de operaciones");
+    }
+
 }

@@ -83,4 +83,10 @@ public class MedicoDeFamilia extends Doctor {
         return "MedicoDeFamilia{" + "realizaLlamadasACasa=" + realizaLlamadasACasa + ", fechaObtencionLicencia=" + fechaObtencionLicencia + '}';
     }
 
+    //sobreescritura del metodo A
+    @Override
+    public void ordenARealizar() {
+        System.out.println(this.getNombre() + " " + this.getApellidos() + ", pase consulta por teléfono a los pacientes asignados");
+    }
+
 }
