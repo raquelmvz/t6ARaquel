@@ -11,7 +11,7 @@ import java.util.Objects;
  *
  * @author raquel
  */
-public class Doctor extends Persona {
+public class Doctor extends PersonalSanitario {
 
     private String numLicencia;
     private double horasSemanales;

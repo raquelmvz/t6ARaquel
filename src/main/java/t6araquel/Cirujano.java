@@ -22,7 +22,7 @@ public class Cirujano extends Doctor{
     }
 
     public Cirujano() {
-        this.anyosExperiencia = Persona.generaAleatorio(0, 20);
+        this.anyosExperiencia = PersonalSanitario.generaAleatorio(0, 20);
         this.trabajaEnPrivado = false;
     }
     

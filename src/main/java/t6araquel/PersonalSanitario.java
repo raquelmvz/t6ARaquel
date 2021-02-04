@@ -12,7 +12,7 @@ import java.util.Random;
  *
  * @author raquel
  */
-public class Persona {
+public class PersonalSanitario {
 
     private String dni;
     private String nombre;
@@ -24,14 +24,14 @@ public class Persona {
     private Genero genero;
 
     //----CONSTRUCTORES--------
-    public Persona(String dni, String nombre, String apellidos, Genero genero) {
+    public PersonalSanitario(String dni, String nombre, String apellidos, Genero genero) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.genero = genero;
     }
 
-    public Persona() {
+    public PersonalSanitario() {
     }
 
     //-----GETTERS Y SETTERS--------
@@ -89,7 +89,7 @@ public class Persona {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Persona other = (Persona) obj;
+        final PersonalSanitario other = (PersonalSanitario) obj;
         if (!Objects.equals(this.dni, other.dni)) {
             return false;
         }
@@ -118,5 +118,7 @@ public class Persona {
 
         return enteroAleatorio;
     }
+    
+    //
 
 }
