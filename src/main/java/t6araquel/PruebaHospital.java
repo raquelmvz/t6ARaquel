@@ -42,6 +42,7 @@ public class PruebaHospital {
         //año de obtencion de licencia
         System.out.println("El cirujano 1 obtuvo su licencia en el año " + cirujano1.anyoObtencionLicencia());
 
+        
     }
 
 }

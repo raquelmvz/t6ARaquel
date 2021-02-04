@@ -54,17 +54,14 @@ public class Doctor extends PersonalSanitario {
         return hash;
     }
 
+    //tener en cuenta las instancias de las superclases
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
+
+        if (super.equals(obj)) {
             return true;
         }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
+
         final Doctor other = (Doctor) obj;
         if (Double.doubleToLongBits(this.horasSemanales) != Double.doubleToLongBits(other.horasSemanales)) {
             return false;
@@ -76,9 +73,10 @@ public class Doctor extends PersonalSanitario {
     }
 
     //------TOSTRING----------------
+    //imprime ademas los datos de super
     @Override
     public String toString() {
-        return "Doctor{" + "numLicencia=" + numLicencia + ", horasSemanales=" + horasSemanales + '}';
+        return "Doctor{" + "numLicencia=" + numLicencia + ", horasSemanales=" + horasSemanales + '}' + " es " + super.toString();
     }
 
     //sobreescritura del metodo A

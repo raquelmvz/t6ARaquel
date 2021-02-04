@@ -81,7 +81,7 @@ public class MedicoDeFamilia extends Doctor {
     //----------TO STRING--------------
     @Override
     public String toString() {
-        return "MedicoDeFamilia{" + "realizaLlamadasACasa=" + realizaLlamadasACasa + ", fechaObtencionLicencia=" + fechaObtencionLicencia + '}';
+        return "MedicoDeFamilia{" + "realizaLlamadasACasa=" + realizaLlamadasACasa + ", fechaObtencionLicencia=" + fechaObtencionLicencia + '}' + " es " + super.toString();
     }
 
     //sobreescritura del metodo A

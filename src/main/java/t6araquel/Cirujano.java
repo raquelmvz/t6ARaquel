@@ -79,7 +79,7 @@ public class Cirujano extends Doctor {
     //-----------TO STRING------------
     @Override
     public String toString() {
-        return "Cirujano{" + "anyosExperiencia=" + anyosExperiencia + ", trabajaEnPrivado=" + trabajaEnPrivado + '}';
+        return "Cirujano{" + "anyosExperiencia=" + anyosExperiencia + ", trabajaEnPrivado=" + trabajaEnPrivado + '}' + " es " + super.toString();
     }
 
     //sobreescritura del metodo A
