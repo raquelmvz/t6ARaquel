@@ -12,15 +12,17 @@ import java.util.Objects;
  * @author raquel
  */
 public class Persona {
-    
+
     private String dni;
     private String nombre;
     private String apellidos;
-    public enum Genero {MUJER, HOMBRE};
-    private Genero genero;
-    
-    //----CONSTRUCTORES--------
 
+    public enum Genero {
+        MUJER, HOMBRE
+    };
+    private Genero genero;
+
+    //----CONSTRUCTORES--------
     public Persona(String dni, String nombre, String apellidos, Genero genero) {
         this.dni = dni;
         this.nombre = nombre;
@@ -30,9 +32,8 @@ public class Persona {
 
     public Persona() {
     }
-    
-    //-----GETTERS Y SETTERS--------
 
+    //-----GETTERS Y SETTERS--------
     public String getDni() {
         return dni;
     }
@@ -64,9 +65,8 @@ public class Persona {
     public void setGenero(Genero genero) {
         this.genero = genero;
     }
-    
-    //-------HASH CODE & EQUALS---------
 
+    //-------HASH CODE & EQUALS---------
     @Override
     public int hashCode() {
         int hash = 3;
@@ -103,14 +103,11 @@ public class Persona {
         }
         return true;
     }
-    
-    //-------TO STRING-----------
 
+    //-------TO STRING-----------
     @Override
     public String toString() {
         return "Persona{" + "dni=" + dni + ", nombre=" + nombre + ", apellidos=" + apellidos + ", genero=" + genero + '}';
     }
-    
-    
-    
+
 }
