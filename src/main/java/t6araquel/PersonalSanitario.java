@@ -119,6 +119,9 @@ public class PersonalSanitario {
         return enteroAleatorio;
     }
     
-    //
+    //Metodo clase A que va a sobreescribirse en B,C y D
+    public void ordenARealizar() {
+        System.out.println(nombre + " " + apellidos + ", acuda al Centro de Salud");
+    }
 
 }
