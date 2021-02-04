@@ -33,6 +33,15 @@ public class PruebaHospital {
         System.out.println("Tras cambio de horas semanales");
         System.out.println(doctor1 + "\n" + doctor2);
 
+        //creacion de un cirujano
+        Cirujano cirujano1 = new Cirujano(19, true, "256987451", 38, "95029684D", "Alba", "Fernandez", PersonalSanitario.Genero.MUJER);
+
+        //imprimir cirujano
+        System.out.println(cirujano1);
+
+        //año de obtencion de licencia
+        System.out.println("El cirujano 1 obtuvo su licencia en el año " + cirujano1.anyoObtencionLicencia());
+
     }
 
 }

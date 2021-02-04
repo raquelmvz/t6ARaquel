@@ -5,6 +5,9 @@
  */
 package t6araquel;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 /**
  *
  * @author raquel
@@ -83,6 +86,16 @@ public class Cirujano extends Doctor {
     @Override
     public void ordenARealizar() {
         System.out.println(this.getNombre() + " " + this.getApellidos() + ", acuda a la sala de operaciones");
+    }
+
+    //metodo c que solo exista en la clase c
+    //metodo que calcula el año de obtencion de la licencia medica teniendo en cuenta los años
+    //de experiencia
+    public int anyoObtencionLicencia() {
+        LocalDate fecha = LocalDate.now().minusYears(anyosExperiencia);
+
+        return fecha.getYear();
+
     }
 
 }
