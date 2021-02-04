@@ -98,4 +98,9 @@ public class Doctor extends PersonalSanitario {
 
     }
 
+    //metodo b2 que se vaya a sobreescribir
+    public void trataPaciente() {
+        System.out.println("Realiza una revisión médica");
+    }
+
 }
