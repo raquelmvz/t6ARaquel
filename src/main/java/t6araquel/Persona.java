@@ -6,6 +6,7 @@
 package t6araquel;
 
 import java.util.Objects;
+import java.util.Random;
 
 /**
  *
@@ -108,6 +109,14 @@ public class Persona {
     @Override
     public String toString() {
         return "Persona{" + "dni=" + dni + ", nombre=" + nombre + ", apellidos=" + apellidos + ", genero=" + genero + '}';
+    }
+
+    //Metodo para generar un num aleatorio entre un min y un max
+    public static int generaAleatorio(int min, int max) {
+        Random random = new Random();
+        int enteroAleatorio = random.nextInt(max - min + 1) + min;
+
+        return enteroAleatorio;
     }
 
 }
