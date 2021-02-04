@@ -94,4 +94,10 @@ public class Cirujano extends Doctor {
 
     }
 
+    //sobreescritura del metodo b2
+    @Override
+    public void trataPaciente() {
+        System.out.println("Realiza una operación quirúrgica ");
+    }
+
 }

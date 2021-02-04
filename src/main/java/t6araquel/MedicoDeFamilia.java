@@ -95,4 +95,10 @@ public class MedicoDeFamilia extends Doctor {
         }
     }
 
+    //sobreescritura del metodo b2
+    @Override
+    public void trataPaciente() {
+        System.out.println("Receta paracetamol");
+    }
+
 }
