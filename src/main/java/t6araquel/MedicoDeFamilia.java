@@ -7,6 +7,7 @@ package t6araquel;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 
 /**
@@ -88,5 +89,16 @@ public class MedicoDeFamilia extends Doctor {
     public void ordenARealizar() {
         System.out.println(this.getNombre() + " " + this.getApellidos() + ", pase consulta por teléfono a los pacientes asignados");
     }
+
+    //metodo d que solo existe en la clase d
+    public void realizaLlamadas() {
+        if (ChronoUnit.YEARS.between(fechaObtencionLicencia, LocalDate.now()) > 10) {
+            System.out.println("El medico puede pasar consulta por telefono");
+        } else {
+            System.out.println("No puede pasar consulta por telefono, necesita 10 años de experiencia");
+        }
+    }
+    
+    
 
 }
