@@ -59,15 +59,11 @@ public class MedicoDeFamilia extends Doctor {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
+
+        if (super.equals(obj)) {
             return true;
         }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
+
         final MedicoDeFamilia other = (MedicoDeFamilia) obj;
         if (this.realizaLlamadasACasa != other.realizaLlamadasACasa) {
             return false;
@@ -98,7 +94,5 @@ public class MedicoDeFamilia extends Doctor {
             System.out.println("No puede pasar consulta por telefono, necesita 10 años de experiencia");
         }
     }
-    
-    
 
 }

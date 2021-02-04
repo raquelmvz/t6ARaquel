@@ -57,15 +57,11 @@ public class Cirujano extends Doctor {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
+
+        if (super.equals(obj)) {
             return true;
         }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
+
         final Cirujano other = (Cirujano) obj;
         if (this.anyosExperiencia != other.anyosExperiencia) {
             return false;
